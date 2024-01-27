@@ -310,7 +310,7 @@ ble_hs_startup_set_evmask_tx(void)
     if (rc != 0) {
         return rc;
     }
-
+#if 0
     if (version >= BLE_HCI_VER_BCS_4_1) {
         /**
          * Enable the following events:
@@ -324,7 +324,7 @@ ble_hs_startup_set_evmask_tx(void)
             return rc;
         }
     }
-
+#endif
     return 0;
 }
 
